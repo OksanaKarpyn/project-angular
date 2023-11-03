@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project-angular';
+  configuration = {
+    c: 4,
+    f: 6,
+  }
 
 
 }

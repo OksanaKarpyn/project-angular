@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IMenuItem } from 'src/app/models/menu';
 
 @Component({
@@ -7,6 +7,10 @@ import { IMenuItem } from 'src/app/models/menu';
   styleUrls: ['./main-menu.component.scss']
 })
 export class MainMenuComponent {
+
+  @Input()
+  config: any;
+
   mainMenu: Array<IMenuItem> = [
     { name: 'Home', icon: 'home', routerLink: '' },
     { name: 'About', icon: 'about', routerLink: 'about' },
