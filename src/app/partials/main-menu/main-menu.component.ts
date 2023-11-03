@@ -8,9 +8,9 @@ import { IMenuItem } from 'src/app/models/menu';
 })
 export class MainMenuComponent {
   mainMenu: Array<IMenuItem> = [
-    { name: 'Home', icon: 'Home', routerLink: '#' },
-    { name: 'Home1', icon: 'Home1', routerLink: '#1' },
-    { name: 'Home1', routerLink: '#1' },
+    { name: 'Home', icon: 'home', routerLink: 'home' },
+    { name: 'About', icon: 'about', routerLink: 'about' },
+    { name: 'Contact', routerLink: 'contact' },
 
 
   ]
