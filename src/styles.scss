@@ -2,3 +2,21 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* fixed and fluid only on sm and up */
+@media(min-width:576px){
+    .fixed{
+        flex:0 0 200px;
+        min-height: 100vh;
+    }
+    .col .fluid{
+        min-height: 100vh;
+    }
+}

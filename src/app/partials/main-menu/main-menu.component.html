@@ -1,6 +1,3 @@
-
-
-<ul>
-    <li *ngFor="let item of mainMenu"><a [routerLink]="item.routerLink">{{item.name}}</a></li>
-  
-  </ul>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of mainMenu"><a [routerLink]="item.routerLink">{{item.name}}</a></li>
+</ul>
