@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IMenuItem } from 'src/app/models/menu';
 
 @Component({
@@ -10,6 +10,8 @@ export class MainMenuComponent {
 
   @Input()
   config: any;
+  @Output()
+  action = new EventEmitter();
 
   mainMenu: Array<IMenuItem> = [
     { name: 'Home', icon: 'home', routerLink: '' },

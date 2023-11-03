@@ -13,5 +13,7 @@ export class AppComponent {
     f: 6,
   }
 
-
+  buttonClicked(event: number) {
+    alert(event);
+  }
 }
